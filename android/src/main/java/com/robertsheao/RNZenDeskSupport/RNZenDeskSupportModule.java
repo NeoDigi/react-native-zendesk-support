@@ -13,8 +13,11 @@ import zendesk.support.guide.HelpCenterActivity;
 import zendesk.support.guide.HelpCenterUiConfig;
 
 public class RNZenDeskSupportModule extends ReactContextBaseJavaModule {
+    private ReactApplicationContext reactContext;
+
     public RNZenDeskSupportModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        this.reactContext = reactContext;
     }
 
     @Override
@@ -27,9 +30,12 @@ public class RNZenDeskSupportModule extends ReactContextBaseJavaModule {
         String appId = config.getString("appId");
         String zendeskUrl = config.getString("zendeskUrl");
         String clientId = config.getString("clientId");
-        Zendesk.INSTANCE.init(getReactApplicationContext(), zendeskUrl, appId, clientId);
+        Zendesk.INSTANCE.init(reactContext, zendeskUrl, appId, clientId);
+
         Identity identity = new AnonymousIdentity();
         Zendesk.INSTANCE.setIdentity(identity);
+
+        Support.INSTANCE.init(Zendesk.INSTANCE);
     }
 
     @ReactMethod
@@ -60,7 +66,7 @@ public class RNZenDeskSupportModule extends ReactContextBaseJavaModule {
                 builder.withContactUsButtonVisible(options.getBoolean("withContactUsButtonVisibility"));
             }
         }
-        builder.show(getReactApplicationContext());
+        builder.show(reactContext);
     }
 
     @ReactMethod
