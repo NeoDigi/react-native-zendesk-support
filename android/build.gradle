@@ -20,5 +20,5 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'com.zendesk:sdk:1.11.0.1'
+    implementation 'com.zendesk:support:2.2.1'
 }
