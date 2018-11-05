@@ -6,6 +6,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 
 import zendesk.core.AnonymousIdentity;
+import zendesk.core.Identity;
 import zendesk.core.Zendesk;
 import zendesk.support.Support;
 import zendesk.support.guide.HelpCenterActivity;
@@ -27,6 +28,8 @@ public class RNZenDeskSupportModule extends ReactContextBaseJavaModule {
         String zendeskUrl = config.getString("zendeskUrl");
         String clientId = config.getString("clientId");
         Zendesk.INSTANCE.init(getReactApplicationContext(), zendeskUrl, appId, clientId);
+        Identity identity = new AnonymousIdentity();
+        Zendesk.INSTANCE.setIdentity(identity);
     }
 
     @ReactMethod
@@ -50,7 +53,6 @@ public class RNZenDeskSupportModule extends ReactContextBaseJavaModule {
     public void showHelpCenterWithOptions(ReadableMap options) {
         HelpCenterUiConfig.Builder builder = HelpCenterActivity.builder();
         if (options != null) {
-
             if (options.hasKey("showConversationsMenuButton")) {
                 builder.withShowConversationsMenuButton(options.getBoolean("showConversationsMenuButton"));
             }
