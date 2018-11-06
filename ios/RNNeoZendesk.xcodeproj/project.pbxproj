@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901EAE2E219156AA00FFD852 /* RNNeoZendesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */; };
+		906925102191570C00E3B58A /* ZendeskCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250C2191570C00E3B58A /* ZendeskCoreSDK.framework */; };
+		906925112191570C00E3B58A /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250E2191570C00E3B58A /* ZendeskSDK.framework */; };
+		906925122191570C00E3B58A /* ZendeskProviderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250F2191570C00E3B58A /* ZendeskProviderSDK.framework */; };
+		906925142191574E00E3B58A /* ZendeskSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9069250D2191570C00E3B58A /* ZendeskSDKStrings.bundle */; };
+		9069254B219159BB00E3B58A /* RNNeoZendeskBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		901EAE28219156AA00FFD852 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNNeoZendesk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNNeoZendesk.swift; sourceTree = "<group>"; };
+		9069250C2191570C00E3B58A /* ZendeskCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskCoreSDK.framework; sourceTree = "<group>"; };
+		9069250D2191570C00E3B58A /* ZendeskSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZendeskSDKStrings.bundle; sourceTree = "<group>"; };
+		9069250E2191570C00E3B58A /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskSDK.framework; sourceTree = "<group>"; };
+		9069250F2191570C00E3B58A /* ZendeskProviderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskProviderSDK.framework; sourceTree = "<group>"; };
+		906925482191595500E3B58A /* RNNeoZendesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNNeoZendesk-Bridging-Header.h"; sourceTree = "<group>"; };
+		906925492191598100E3B58A /* RNNeoZendeskBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNNeoZendeskBridge.h; sourceTree = "<group>"; };
+		9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNNeoZendeskBridge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		901EAE27219156AA00FFD852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906925112191570C00E3B58A /* ZendeskSDK.framework in Frameworks */,
+				906925122191570C00E3B58A /* ZendeskProviderSDK.framework in Frameworks */,
+				906925102191570C00E3B58A /* ZendeskCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901EAE21219156AA00FFD852 = {
+			isa = PBXGroup;
+			children = (
+				901EAE2C219156AA00FFD852 /* RNNeoZendesk */,
+				901EAE2B219156AA00FFD852 /* Products */,
+				9069250B2191570C00E3B58A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		901EAE2B219156AA00FFD852 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901EAE2C219156AA00FFD852 /* RNNeoZendesk */ = {
+			isa = PBXGroup;
+			children = (
+				901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */,
+				906925482191595500E3B58A /* RNNeoZendesk-Bridging-Header.h */,
+				906925492191598100E3B58A /* RNNeoZendeskBridge.h */,
+				9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */,
+			);
+			path = RNNeoZendesk;
+			sourceTree = "<group>";
+		};
+		9069250B2191570C00E3B58A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9069250C2191570C00E3B58A /* ZendeskCoreSDK.framework */,
+				9069250D2191570C00E3B58A /* ZendeskSDKStrings.bundle */,
+				9069250E2191570C00E3B58A /* ZendeskSDK.framework */,
+				9069250F2191570C00E3B58A /* ZendeskProviderSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		901EAE29219156AA00FFD852 /* RNNeoZendesk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNNeoZendesk" */;
+			buildPhases = (
+				901EAE26219156AA00FFD852 /* Sources */,
+				906925132191574700E3B58A /* Resources */,
+				901EAE27219156AA00FFD852 /* Frameworks */,
+				901EAE28219156AA00FFD852 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNNeoZendesk;
+			productName = RNNeoZendesk;
+			productReference = 901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		901EAE22219156AA00FFD852 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julien Tielemans";
+				TargetAttributes = {
+					901EAE29219156AA00FFD852 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNNeoZendesk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 901EAE21219156AA00FFD852;
+			productRefGroup = 901EAE2B219156AA00FFD852 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901EAE29219156AA00FFD852 /* RNNeoZendesk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		906925132191574700E3B58A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906925142191574E00E3B58A /* ZendeskSDKStrings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		901EAE26219156AA00FFD852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9069254B219159BB00E3B58A /* RNNeoZendeskBridge.m in Sources */,
+				901EAE2E219156AA00FFD852 /* RNNeoZendesk.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		901EAE2F219156AA00FFD852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		901EAE30219156AA00FFD852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		901EAE32219156AA00FFD852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97F385R37M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNNeoZendesk/RNNeoZendesk-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		901EAE33219156AA00FFD852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97F385R37M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNNeoZendesk/RNNeoZendesk-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNNeoZendesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901EAE2F219156AA00FFD852 /* Debug */,
+				901EAE30219156AA00FFD852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNNeoZendesk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901EAE32219156AA00FFD852 /* Debug */,
+				901EAE33219156AA00FFD852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 901EAE22219156AA00FFD852 /* Project object */;
+}
