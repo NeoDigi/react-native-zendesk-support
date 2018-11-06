@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RNNeoZendeskBridge : NSObject
+@interface RNZenDeskSupportBridge : NSObject
 
 @end

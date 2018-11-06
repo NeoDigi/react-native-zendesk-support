@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		901EAE2E219156AA00FFD852 /* RNNeoZendesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */; };
+		901EAE2E219156AA00FFD852 /* RNZenDeskSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EAE2D219156AA00FFD852 /* RNZenDeskSupport.swift */; };
 		906925102191570C00E3B58A /* ZendeskCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250C2191570C00E3B58A /* ZendeskCoreSDK.framework */; };
 		906925112191570C00E3B58A /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250E2191570C00E3B58A /* ZendeskSDK.framework */; };
 		906925122191570C00E3B58A /* ZendeskProviderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069250F2191570C00E3B58A /* ZendeskProviderSDK.framework */; };
 		906925142191574E00E3B58A /* ZendeskSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9069250D2191570C00E3B58A /* ZendeskSDKStrings.bundle */; };
-		9069254B219159BB00E3B58A /* RNNeoZendeskBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */; };
+		9069254B219159BB00E3B58A /* RNZenDeskSupportBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9069254A219159BB00E3B58A /* RNZenDeskSupportBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,15 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNNeoZendesk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNNeoZendesk.swift; sourceTree = "<group>"; };
+		901EAE2A219156AA00FFD852 /* libRNZenDeskSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNZenDeskSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		901EAE2D219156AA00FFD852 /* RNZenDeskSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNZenDeskSupport.swift; sourceTree = "<group>"; };
 		9069250C2191570C00E3B58A /* ZendeskCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskCoreSDK.framework; sourceTree = "<group>"; };
 		9069250D2191570C00E3B58A /* ZendeskSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZendeskSDKStrings.bundle; sourceTree = "<group>"; };
 		9069250E2191570C00E3B58A /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskSDK.framework; sourceTree = "<group>"; };
 		9069250F2191570C00E3B58A /* ZendeskProviderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskProviderSDK.framework; sourceTree = "<group>"; };
-		906925482191595500E3B58A /* RNNeoZendesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNNeoZendesk-Bridging-Header.h"; sourceTree = "<group>"; };
-		906925492191598100E3B58A /* RNNeoZendeskBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNNeoZendeskBridge.h; sourceTree = "<group>"; };
-		9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNNeoZendeskBridge.m; sourceTree = "<group>"; };
+		906925482191595500E3B58A /* RNZenDeskSupport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNZenDeskSupport-Bridging-Header.h"; sourceTree = "<group>"; };
+		906925492191598100E3B58A /* RNZenDeskSupportBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNZenDeskSupportBridge.h; sourceTree = "<group>"; };
+		9069254A219159BB00E3B58A /* RNZenDeskSupportBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNZenDeskSupportBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		901EAE21219156AA00FFD852 = {
 			isa = PBXGroup;
 			children = (
-				901EAE2C219156AA00FFD852 /* RNNeoZendesk */,
+				901EAE2C219156AA00FFD852 /* RNZenDeskSupport */,
 				901EAE2B219156AA00FFD852 /* Products */,
 				9069250B2191570C00E3B58A /* Frameworks */,
 			);
@@ -65,20 +65,20 @@
 		901EAE2B219156AA00FFD852 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */,
+				901EAE2A219156AA00FFD852 /* libRNZenDeskSupport.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		901EAE2C219156AA00FFD852 /* RNNeoZendesk */ = {
+		901EAE2C219156AA00FFD852 /* RNZenDeskSupport */ = {
 			isa = PBXGroup;
 			children = (
-				901EAE2D219156AA00FFD852 /* RNNeoZendesk.swift */,
-				906925482191595500E3B58A /* RNNeoZendesk-Bridging-Header.h */,
-				906925492191598100E3B58A /* RNNeoZendeskBridge.h */,
-				9069254A219159BB00E3B58A /* RNNeoZendeskBridge.m */,
+				901EAE2D219156AA00FFD852 /* RNZenDeskSupport.swift */,
+				906925482191595500E3B58A /* RNZenDeskSupport-Bridging-Header.h */,
+				906925492191598100E3B58A /* RNZenDeskSupportBridge.h */,
+				9069254A219159BB00E3B58A /* RNZenDeskSupportBridge.m */,
 			);
-			path = RNNeoZendesk;
+			path = RNZenDeskSupport;
 			sourceTree = "<group>";
 		};
 		9069250B2191570C00E3B58A /* Frameworks */ = {
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		901EAE29219156AA00FFD852 /* RNNeoZendesk */ = {
+		901EAE29219156AA00FFD852 /* RNZenDeskSupport */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNNeoZendesk" */;
+			buildConfigurationList = 901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNZenDeskSupport" */;
 			buildPhases = (
 				901EAE26219156AA00FFD852 /* Sources */,
 				906925132191574700E3B58A /* Resources */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = RNNeoZendesk;
-			productName = RNNeoZendesk;
-			productReference = 901EAE2A219156AA00FFD852 /* libRNNeoZendesk.a */;
+			name = RNZenDeskSupport;
+			productName = RNZenDeskSupport;
+			productReference = 901EAE2A219156AA00FFD852 /* libRNZenDeskSupport.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNNeoZendesk" */;
+			buildConfigurationList = 901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNZenDeskSupport" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				901EAE29219156AA00FFD852 /* RNNeoZendesk */,
+				901EAE29219156AA00FFD852 /* RNZenDeskSupport */,
 			);
 		};
 /* End PBXProject section */
@@ -162,8 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9069254B219159BB00E3B58A /* RNNeoZendeskBridge.m in Sources */,
-				901EAE2E219156AA00FFD852 /* RNNeoZendesk.swift in Sources */,
+				9069254B219159BB00E3B58A /* RNZenDeskSupportBridge.m in Sources */,
+				901EAE2E219156AA00FFD852 /* RNZenDeskSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +310,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNNeoZendesk/RNNeoZendesk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNZenDeskSupport/RNZenDeskSupport-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +337,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "RNNeoZendesk/RNNeoZendesk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "RNZenDeskSupport/RNZenDeskSupport-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNNeoZendesk" */ = {
+		901EAE25219156AA00FFD852 /* Build configuration list for PBXProject "RNZenDeskSupport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				901EAE2F219156AA00FFD852 /* Debug */,
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNNeoZendesk" */ = {
+		901EAE31219156AA00FFD852 /* Build configuration list for PBXNativeTarget "RNZenDeskSupport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				901EAE32219156AA00FFD852 /* Debug */,

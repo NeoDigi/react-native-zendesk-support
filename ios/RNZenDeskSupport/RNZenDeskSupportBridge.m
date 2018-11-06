@@ -6,10 +6,10 @@
 //  Copyright © 2018 Julien Tielemans. All rights reserved.
 //
 
-#import "RNNeoZendeskBridge.h"
+#import "RNZenDeskSupportBridge.h"
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_REMAP_MODULE(RNNeoZendesk, RNNeoZendesk, NSObject)
+@interface RCT_EXTERN_REMAP_MODULE(RNZenDeskSupport, RNZenDeskSupport, NSObject)
 
 RCT_EXTERN_METHOD(initialize:(NSDictionary *)config);
 
